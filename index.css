@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#div-1{
+    background-color: rgba(36, 80, 224, 0.116);
+    width: 70%;
+    height: 100vh;
+    
+}
+#div-1-content{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px 50px 0px 150px;
+}
+
+#div-1-content>p{
+    color: rgba(73, 80, 87, 1);
+    align-self: flex-start;
+    
+}
+#div-1-content>p>span{
+    vertical-align: middle;
+}
+    
+#logo{
+    width: 130px;
+    height: 130px;
+    align-self: flex-start;
+}
+
+#texto-entrada{
+    width: 70%;
+    border: none;
+    background-color: rgba(205, 199, 238, 0);
+    resize: none;
+    height: 60vh;
+    font-size: 35px;
+    color: rgba(10, 56, 113, 1);
+    padding: 0px;
+}
+#texto-entrada:focus-visible{
+    outline: -webkit-focus-ring-color auto 0px;
+}
+#div-botones{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boton{
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid rgba(10, 56, 113, 1);
+    cursor: pointer;
+}
+#boton-encriptar{
+    color:white;
+    background-color: rgba(10, 56, 113, 1);
+}
+#boton-desencriptar{
+    color:rgba(10, 56, 113, 1);
+    background-color: white;
+}
+
+#div-2{
+    background-color: rgba(36, 80, 224, 0.116);
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-2-content{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#texto-mostrado{
+    color: rgba(73, 80, 87, 1);
+    font-size: 18px;
+    padding: 15px;
+}
+.img-muneco,.img-noencontrado{
+    width: 80%;
+    visibility: hidden;
+}
+#boton-copiar{
+    color:rgba(10, 56, 113, 1);
+    background-color: white;
+    margin: 15px;
+}
