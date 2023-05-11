@@ -99,7 +99,7 @@ body{
 }
 .img-muneco,.img-noencontrado{
     width: 80%;
-    visibility: hidden;
+    visibility: visible;
 }
 #boton-copiar{
     color:rgba(10, 56, 113, 1);

@@ -1,5 +1,13 @@
+function ocultarimagenes(){
+    var css= document.getElementById("img-muneco");
+    css.style.cssText = 'visibility: hidden;';
+    var css2=document.getElementById("img-noencontrado");
+    css2.style.cssText= 'visibility: hidden;';
+}
+    
     var btnencriptar= document.getElementById("boton-encriptar");
     btnencriptar.addEventListener('click', function(){
+        ocultarimagenes();
         let textoEntrada= document.getElementById("texto-entrada").value;
         textoEntrada= textoEntrada.toLowerCase();
         let arreglo = textoEntrada.split("");
@@ -39,6 +47,7 @@
     
     var btndesencriptar = document.getElementById("boton-desencriptar");
     btndesencriptar.addEventListener("click", function(){
+        ocultarimagenes();
         let texto2= document.getElementById("texto-entrada").value;
         let nuevoTexto="";
         for (let i = 0; i < texto2.length; i++) {
